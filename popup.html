@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tibia Bazaar Tracker</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .container label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+
+      .form-group select,
+      .form-group input {
+        width: 90px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .form-group button {
+        width: 48%;
+        padding: 8px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #start {
+        background-color: #007bff;
+        color: white;
+      }
+
+      #update {
+        background-color: #28a745;
+        color: white;
+      }
+
+      #start:hover {
+        background-color: #0056b3;
+      }
+
+      #update:hover {
+        background-color: #218838;
+      }
+
+      #status {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label for="char">Select Vocation:</label>
+        <select name="char" id="char">
+          <option value="3">Knight</option>
+          <option value="4">Paladin</option>
+          <option value="2">Druid</option>
+          <option value="5">Sorcerer</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="world">Select World:</label>
+        <select name="world" id="world">
+          <option value="antica">Antica</option>
+          <option value="Ambra">Ambra</option>
+          <option value="Antica">Antica</option>
+          <option value="Astera">Astera</option>
+          <option value="Belobra">Belobra</option>
+          <option value="Bona">Bona</option>
+          <option value="Calmera">Calmera</option>
+          <option value="Celebra">Celebra</option>
+          <option value="Celesta">Celesta</option>
+          <option value="Collabra">Collabra</option>
+          <option value="Descubra">Descubra</option>
+          <option value="Dia">Dia</option>
+          <option value="Divina">Divina</option>
+          <option value="Epoca">Epoca</option>
+          <option value="Esmera">Esmera</option>
+          <option value="Etebra">Etebra</option>
+          <option value="Ferobra">Ferobra</option>
+          <option value="Fibera">Fibera</option>
+          <option value="Firmera">Firmera</option>
+          <option value="Flamera">Flamera</option>
+          <option value="Gentebra">Gentebra</option>
+          <option value="Gladera">Gladera</option>
+          <option value="Gladibra">Gladibra</option>
+          <option value="Gravitera">Gravitera</option>
+          <option value="Harmonia">Harmonia</option>
+          <option value="Havera">Havera</option>
+          <option value="Honbra">Honbra</option>
+          <option value="Inabra">Inabra</option>
+          <option value="Issobra">Issobra</option>
+          <option value="Jacabra">Jacabra</option>
+          <option value="Jadebra">Jadebra</option>
+          <option value="Jaguna">Jaguna</option>
+          <option value="Kalibra">Kalibra</option>
+          <option value="Karmeya">Karmeya</option>
+          <option value="Lobera">Lobera</option>
+          <option value="Luminera">Luminera</option>
+          <option value="Lutabra">Lutabra</option>
+          <option value="Malivora">Malivora</option>
+          <option value="Menera">Menera</option>
+          <option value="Monza">Monza</option>
+          <option value="Nefera">Nefera</option>
+          <option value="Nevia">Nevia</option>
+          <option value="Obscubra">Obscubra</option>
+          <option value="Oceanis">Oceanis</option>
+          <option value="Ombra">Ombra</option>
+          <option value="Ourobra">Ourobra</option>
+          <option value="Pacera">Pacera</option>
+          <option value="Peloria">Peloria</option>
+          <option value="Premia">Premia</option>
+          <option value="Quebra">Quebra</option>
+          <option value="Quelibra">Quelibra</option>
+          <option value="Quidera">Quidera</option>
+          <option value="Quintera">Quintera</option>
+          <option value="Rasteibra">Rasteibra</option>
+          <option value="Refugia">Refugia</option>
+          <option value="Retalia">Retalia</option>
+          <option value="Runera">Runera</option>
+          <option value="Secura">Secura</option>
+          <option value="Serdebra">Serdebra</option>
+          <option value="Solidera">Solidera</option>
+          <option value="Stralis">Stralis</option>
+          <option value="Talera">Talera</option>
+          <option value="Temera">Temera</option>
+          <option value="Thyria">Thyria</option>
+          <option value="Tornabra">Tornabra</option>
+          <option value="Ulera">Ulera</option>
+          <option value="Unebra">Unebra</option>
+          <option value="Ustebra">Ustebra</option>
+          <option value="Vandera">Vandera</option>
+          <option value="Venebra">Venebra</option>
+          <option value="Victoris">Victoris</option>
+          <option value="Vitera">Vitera</option>
+          <option value="Vunira">Vunira</option>
+          <option value="Wadira">Wadira</option>
+          <option value="Wildera">Wildera</option>
+          <option value="Wintera">Wintera</option>
+          <option value="Xyla">Xyla</option>
+          <option value="Yara">Yara</option>
+          <option value="Yonabra">Yonabra</option>
+          <option value="Yovera">Yovera</option>
+          <option value="Yubra">Yubra</option>
+          <option value="Zephyra">Zephyra</option>
+          <option value="Zuna">Zuna</option>
+          <option value="Zunera">Zunera</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="char-tracker">Char Tracker:</label>
+        <input type="text" name="char-tracker" id="char-tracker" />
+      </div>
+
+      <div class="form-group">
+        <button id="start">Set Tracker</button>
+        <button id="update">Update</button>
+      </div>
+
+      <div id="status">Waiting for input...</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
